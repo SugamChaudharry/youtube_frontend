@@ -20,7 +20,7 @@ function Dashboard() {
         </div>
         <div className="flex w-full">
           <DashBoardSideBar />
-          <div className="h-full p-4 w-[95%]">
+          <div className="h-full p-4 w-full">
             <Outlet />
           </div>
         </div>
