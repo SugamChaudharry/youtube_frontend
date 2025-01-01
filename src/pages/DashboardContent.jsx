@@ -6,6 +6,7 @@ import { IoCreateOutline } from "react-icons/io5";
 import { RiPlayListAddFill } from "react-icons/ri";
 import { useState } from "react";
 import VideoPopUp from "../components/dashboard/VideoPopUp";
+import PlaylistPopup from "../components/dashboard/PlaylistPopup";
 const DashboardContent = () => {
   const active = useSelector(selectActive);
   const activeClass = " border-x-2 px-9 border-purple-400 bg-[#5e3f65b4] ";
@@ -114,7 +115,9 @@ const DashboardContent = () => {
         </div>
       )}
       {popUps[1] == 1 && (
-        <div className="absolute mx-auto bg-blue-500 left-0 right-0 top-20 w-[80%] h-[75vh] bg-black border-2 border-white"></div>
+        <div className="absolute mx-auto left-0 right-0 top-20 w-[80%] h-[75vh] bg-black border-2 border-white">
+        <PlaylistPopup />
+        </div>
       )}
       {popUps[2] == 1 && (
         <div className="absolute mx-auto bg-green-400 left-0 right-0 top-20 w-[80%] h-[75vh] bg-black border-2 border-white"></div>
